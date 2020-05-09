@@ -2,9 +2,9 @@
 // *Виведіть значення масиву в консоль.
 // *Виведіть кожне значення масиву використовуючи довільний цикл.
 let arr = [1,2,3,4,5,6];
-//console.log(arr);
+console.log(arr);
 for(let i =0; i < arr.length; i++){
-  //  console.log(i);
+    console.log(i);
 }
 
 // 2. Створіть одновимірний обєкт і присвойте його в змінну.
@@ -18,32 +18,32 @@ let obj = {
 
 //console.log(obj);
 for(el in obj){
-   // console.log('el', el);
+    console.log('el', el);
 }
 
 // 3. Створіть масив і видаліть останнє значення з масиву, викoристовуючи "pop"
 // *Виведіть в консоль нову довжину масиву
 let arr2 = [1,2,3,4,5,6];
 arr2.pop();
-//console.log(arr2.length);
+console.log(arr2.length);
 
 // 4. Створіть масив і додайте нове значення до масиву з кінця, викoристовуючи "push"
 // *Виведіть в консоль нову довжину масиву
 let arr3 = [1,2,3];
 arr3.push('hello world')
-//console.log(arr3.length);
+console.log(arr3.length);
 
 // 5. Створіть масив і видаліть перше значення з масиву, викoристовуючи "shift"
 // *Виведіть в консоль нову довжину масиву
 arr = [1,2,3,4,5,6];
 arr.shift();
-//console.log(arr.length);
+console.log(arr.length);
 
 // 6. Створіть масив і додайте нове значення до масиву з початку, викoристовуючи "unshift"
 // *Виведіть в консоль нову довжину масиву
 arr = [1,2,3,4,5];
 arr.unshift();
-//console.log(arr.length);
+console.log(arr.length);
 
 // 7. Створіть рекурсивну функцію для того, щоб вивести в консоль всі значення багатовимірного масиву
 let newArr = [
@@ -71,12 +71,14 @@ let newObj = {
         val3: 3,
     }
 }
+
+
 const recurFuncObj = (arg) => {
     for(let el in arg ){
-            console.log('el', el);
+            console.log(el, ':', arg[el]);
             if (typeof arg[el] === 'object'){
                 for(let subEl in arg[el]){
-                    console.log('subEl', subEl);
+                    console.log(subEl, ':', arg[el][subEl]);
                 }
             }
     }
