@@ -9,6 +9,8 @@ const arrowFunc = (arg1) => {
 // 4. Створіть функцію яка приймає два аргументи, перший це обєкт другий це колбек.
 const newFunc = ({}, cb) => {};
 // 5. Створіть рекурсивну функцію.
+
+//wrong variant
 const recurFunc = (arg1) => {
     for(let element in arg1 ){
             if (typeof arg1[element] === 'object'){
@@ -18,6 +20,15 @@ const recurFunc = (arg1) => {
             }
     }
 }
+
+
+//right variant
+function revStr(str){
+    if (str === '') return '';
+    return revStr(str.substr(1)) + str[0];
+  }
+  console.log(revStr('dog'));
+
 // 6. Створіть самовикликаючусь функцію.
 (function () {
     var x = "Hello!!";  // I will invoke myself
