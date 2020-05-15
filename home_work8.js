@@ -33,7 +33,7 @@ console.log(birthDay.getFullYear());
 console.log(birthDay.getMonth());
 
 // 10. Виведіть день вашого народження (Використовуючи змінну з 7 завдання).
-console.log(birthDay.getDay());
+console.log(birthDay.getDate());
 
 // 11. Виведіть в консоль рік місяць день вашого народження через тире (-) (Використовуючи змінну з 7 завдання).
 console.log(`${birthDay.getMonth()}-${birthDay.getDay()}`);
